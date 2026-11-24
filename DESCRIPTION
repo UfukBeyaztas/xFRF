@@ -1,0 +1,20 @@
+Package: xFRF
+Type: Package
+Title: Explainable Functional Random Forests for Functional Responses
+Version: 0.1.0
+Authors@R: person("Ufuk", "Beyaztas", email = "ufuk.beyaztas@marmara.edu.tr",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-5208-4950"))
+Description: Random forests that predict a response curve from functional
+    predictors recorded on grids and from scalar covariates. Each functional
+    predictor enters through ridge-stabilized B-spline coordinates, the trees
+    split on the integrated squared error of the response curves, and
+    out-of-bag permutation importance is reported as curves over response
+    time and as surfaces over predictor and response time. The package also
+    computes split-conformal simultaneous prediction bands, the smallest
+    change of selected recording times that moves a query to another leaf,
+    cross-validation of the forest controls, and the data-generating designs
+    of the simulation study.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.6.0)
+Imports: graphics, grDevices, splines, stats, utils
